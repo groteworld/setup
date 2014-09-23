@@ -1,0 +1,22 @@
+# -*- sh -*-
+# mostly taken from https://github.com/losingkeys/dotfiles
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias g=git
+alias gs='git status'
+
+alias ls='ls -a'
+
+alias vimrc='vim "$HOME/.vimrc"'
+alias zshrc='vim "$HOME/.zshrc"'
+
+alias '?'='which'
+
+alias venv='source venv/bin/activate'
+
+alias u='sudo softwareupdate --download --install --all &&
+         brew update && brew upgrade && brew cask'
+alias clean='sudo rm -rf ~/.Trash/* && brew cask cleanup'

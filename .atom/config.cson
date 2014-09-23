@@ -1,0 +1,21 @@
+'editor':
+  'invisibles': {}
+  'tabLength': 4
+  'softTabs': false
+'core':
+  'projectHome': '/Users/skj3gg/Workspace'
+  'ignoredNames': [
+    '.git'
+    '.DS_Store'
+    '*.pyc',
+    '.sass-cache'
+  ]
+  'themes': [
+    'flatland-dark-ui'
+    'flatland-dark'
+  ]
+'tree-view':
+  'hideIgnoredNames': true
+  'hideVcsIgnoredFiles': true
+'welcome':
+  'showOnStartup': false
