@@ -1,8 +1,7 @@
 dotfiles
 ========
-> "I LOVE THIS STUFF, PEOPLES!"
->
-> -- <cite>myself (age 5)</cite>
+> "I LOVE THIS STUFF, PEOPLES!"  
+>           *-- myself (age 5)*
 
 <3 dotfiles and osx
 
@@ -10,7 +9,7 @@ Installation
 ------------
 the `install.sh` script should install *most* of my enjoyed programs and
 applications. If you find you are having problems with an install feel free
-to submit an (issue)[https://github.com/skj3gg/dotfiles/issues]. You will
+to submit an [issue](https://github.com/skj3gg/dotfiles/issues). You will
 probably need to enter your password for this.
 ```
 dotfiles|⇒ (sudo) sh install.sh  # aint nothing but a chicken wing
