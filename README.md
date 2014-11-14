@@ -12,7 +12,7 @@ applications. If you find you are having problems with an install feel free
 to submit an [issue](https://github.com/skj3gg/dotfiles/issues). You will
 probably need to enter your password for this.
 ```
-dotfiles|⇒ (sudo) sh install.sh  # aint nothing but a chicken wing
+$ (sudo) sh install.sh  # aint nothing but a chicken wing
 ```
 
 Loading
