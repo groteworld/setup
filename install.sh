@@ -24,7 +24,6 @@ brew install hub
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh #oh-my-zshell
 brew cask install atom
 brew cask install github
-brew cask install postgres
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install filezilla
