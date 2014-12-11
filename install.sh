@@ -15,6 +15,7 @@ brew cask install java
 brew install leiningen
 brew install python
 brew install python3
+brew install pypy
 brew install node
 
 # *** Developer Tools ***
