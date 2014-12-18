@@ -13,12 +13,13 @@ brew cask install opera
 # *** Programming Languages ***
 brew cask install java
 brew install leiningen
-brew install python
-brew install python3
-brew install pypy
-brew install node
+brew install pyenv
+brew install rbenv
+brew install ruby-build
+brew install rbenv-gem-rehash
 
 # *** Developer Tools ***
+brew install git
 brew install wget
 brew install zsh
 brew install hub
@@ -27,17 +28,11 @@ brew cask install atom
 brew cask install github
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install filezilla
 brew install heroku-toolbelt
 
-brew install bison
-brew install flex
+# *** Linters ***
 pip install flake8
 pip install pep257
-pip install pep8-naming
-pip install polib
-pip install ply
-gem install jekyll
 node install -g jshint
 node install -g csslint
 
