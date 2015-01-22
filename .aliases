@@ -18,9 +18,8 @@ alias '?'='which'
 
 alias venv='source .venv/bin/activate'
 
-alias antlr4='java -jar /usr/local/lib/antlr-4.4-complete.jar'
-alias grun='java org.antlr.v4.runtime.misc.TestRig'
+alias rustup=`curl -s https://static.rust-lang.org/rustup.sh | sudo sh`
 
 alias u='sudo softwareupdate --download --install --all &&
-         brew update && brew upgrade && brew cask'
-alias clean='sudo rm -rf ~/.Trash/* && brew cask cleanup'
+         brew update && brew upgrade && brew cask && rustup'
+alias clean='sudo brew cleanup && brew cask cleanup && rm -rf ~/.Trash/*'
