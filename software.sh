@@ -39,6 +39,7 @@ brew cask install mailbox
 brew cask install opera
 brew cask install skype
 brew cask install spotify
+brew cask install sublime-text3
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install virtualbox
