@@ -18,7 +18,7 @@ alias '?'='which'
 
 alias venv='source .venv/bin/activate'
 
-alias rustup=`curl -s https://static.rust-lang.org/rustup.sh | sudo sh`
+alias rustup='curl -s https://static.rust-lang.org/rustup.sh | sudo sh'
 
 alias u='sudo softwareupdate --download --install --all &&
          brew update && brew upgrade && brew cask && rustup'
