@@ -21,6 +21,7 @@ brew cask install amethyst
 brew cask install atom
 brew cask install caffeine
 brew cask install dropbox
+brew cask install eclipse-ide
 brew cask install evernote
 brew cask install flash
 brew cask install filezilla
@@ -65,8 +66,6 @@ if [ $1 = "all" ]; then
     brew install cmus
     brew install flex
     brew install heroku-toolbelt
-    brew install leiningen
-    brew install node
     brew install postgresql
     brew install pypy
     brew install python3
