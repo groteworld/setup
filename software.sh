@@ -84,12 +84,11 @@ brew cask install vlc
 brew cask install xquartz
 
 curl -sf -L https://static.rust-lang.org/rustup.sh | sh
-
+curl https://raw.githubusercontent.com/chrismdp/p/master/p > /usr/local/bin/p && chmod +x /usr/local/bin/p
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 sudo gem install coffee-script
 sudo gem install jekyll
-sudo gem install lunchy
 sudo gem install rubocop
 sudo gem install sass
 sudo gem install scss-lint
@@ -101,6 +100,7 @@ npm install -g gulp
 npm install -g jshint
 npm install -g less
 npm install -g yo
+npm install -g ttystudio
 npm install generator-flask
 npm install generator-phaser
 
