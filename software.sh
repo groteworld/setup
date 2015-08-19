@@ -56,6 +56,7 @@ brew cask install github-desktop
 brew cask install google-chrome
 brew cask install google-drive
 brew cask install google-hangouts
+brew cask install hipchat
 brew cask install imageoptim
 brew cask install intellij-idea
 brew cask install iterm2
@@ -75,23 +76,23 @@ brew cask install steam
 brew cask install sublime-text3
 brew cask install u-torrent
 brew cask install unity-web-player
-brew cask install unity3d
+brew cask install unity
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install virtualbox
 brew cask install vlc
-brew cask install x-quartz
+brew cask install xquartz
 
 curl -sf -L https://static.rust-lang.org/rustup.sh | sh
 
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-gem install coffee-script
-gem install jekyll
-gem install lunchy
-gem install rubocop
-gem install sass
-gem install scss-lint
+sudo gem install coffee-script
+sudo gem install jekyll
+sudo gem install lunchy
+sudo gem install rubocop
+sudo gem install sass
+sudo gem install scss-lint
 
 npm install -g bower
 npm install -g csslint
