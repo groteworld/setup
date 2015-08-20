@@ -3,7 +3,7 @@
 [core]
 	editor = subl
 [credential]    
-    helper = osxkeychain
+	helper = osxkeychain
 [diff]
 	tool = subl
 [user]
