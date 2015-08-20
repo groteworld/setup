@@ -1,2 +1,9 @@
 [commit]
   template = ~/.gitmessage
+[core]
+	editor = subl
+[diff]
+	tool = subl
+[user]
+	name = Blake Grotewold
+	email = hello@grotewold.me
