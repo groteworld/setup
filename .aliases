@@ -10,6 +10,10 @@ alias show.='defaults write com.apple.finder AppleShowAllFiles YES;
 alias hide.='defaults write com.apple.finder AppleShowAllFiles NO;
             killall Finder /System/Library/CoreServices/Finder.app'
 
+# make directory or file and open it
+mkcd() { mkdir $1 && cd $1 }
+tim() { touch $1 && vim $1 }
+
 alias git=hub
 alias g=git
 alias gs='git status'
