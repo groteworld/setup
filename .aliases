@@ -27,6 +27,8 @@ alias '?'='which'
 
 alias venv='source .venv/bin/activate'
 
+alias dockup='eval "$(docker-machine env default)" && echo "(default) env attached."'
+
 alias rustup='curl -s https://static.rust-lang.org/rustup.sh | sudo sh'
 
 alias u='sudo softwareupdate --download --install --all &&
