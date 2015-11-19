@@ -65,7 +65,6 @@ brew cask install joinme
 brew cask install kindle
 brew cask install macvim
 brew cask install mailbox
-brew cask install mapbox-studio
 brew cask install opera
 brew cask install poedit
 brew cask install skitch
@@ -101,8 +100,6 @@ npm install -g jshint
 npm install -g less
 npm install -g yo
 npm install -g ttystudio
-npm install generator-flask
-npm install generator-phaser
 
 pip install --upgrade pip
 pip install --upgrade setuptools
@@ -114,5 +111,6 @@ pip install polib
 pip install requests
 pip install sphinx
 pip install virtualenv
+pip install awscli
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
