@@ -93,7 +93,7 @@ brew cask install iterm2
 brew cask install java
 brew cask install joinme
 brew cask install kindle
-brew cask install mailbox
+brew cask install nylas-n1
 brew cask install opera
 brew cask install poedit
 brew cask install skitch
