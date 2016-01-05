@@ -10,6 +10,8 @@ alias show.='defaults write com.apple.finder AppleShowAllFiles YES;
 alias hide.='defaults write com.apple.finder AppleShowAllFiles NO;
             killall Finder /System/Library/CoreServices/Finder.app'
 
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 # finds largest directories in cwd
 alias ducks='du -cks * | sort -rn | head'
 

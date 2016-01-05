@@ -1,9 +1,0 @@
-[submodule ".vim/bundle/solarized"]
-	path = .vim/bundle/solarized
-	url = git://github.com/altercation/vim-colors-solarized
-[submodule ".atom/packages/flatland-dark-ui"]
-	path = .atom/packages/flatland-dark-ui
-	url = git://github.com/michaelhelmick/flatland-dark-ui
-[submodule ".atom/packages/flatland-dark"]
-	path = .atom/packages/flatland-dark
-	url = git://github.com/michaelhelmick/flatland-dark

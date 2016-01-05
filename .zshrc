@@ -1,5 +1,5 @@
 export ZSH=$HOME//.oh-my-zsh
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_GITHUB_API_TOKEN="__REPLACE_WITH_TOKEN__"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home"
