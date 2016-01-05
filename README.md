@@ -8,7 +8,7 @@ dotfiles
 Installation
 ------------
 ```
-cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE.md} # aint nothing but a chicken wing
+cd; curl -#L https://github.com/grotewold/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE.md} # aint nothing but a chicken wing
 ```
 
 Attributions
