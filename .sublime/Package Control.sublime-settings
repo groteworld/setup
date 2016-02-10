@@ -1,0 +1,22 @@
+{
+    "installed_packages": [
+        "Theme - Cobalt2",
+        "SideBarEnhancements",
+        "GitGutter",
+        "Markdown Preview",
+        "Color Highlighter",
+        "MagicPython",
+        "SublimeLinter-contrib-rustc",
+        "SublimeLinter-jshint",
+        "SublimeLinter-flake8",
+        "SublimeLinter-pep257",
+        "SublimeLinter-csslint",
+        "SublimeLinter-rubocop",
+        "SublimeLinter-coffeelint",
+        "SublimeLinter-json",
+        "SublimeLinter-haml",
+        "SublimeLinter-contrib-reek",
+        "SublimeLinter-contrib-alex",
+        "SublimeLinter-annotations",
+    ]
+}

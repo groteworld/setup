@@ -2,15 +2,13 @@
     "color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
     "ensure_newline_at_eof_on_save": true,
     "font_face": "Monaco",
-    "font_size": 13.0,
+    "font_size": 15.0,
     "ignored_packages":
     [
-        "Vintage"
+        "Vintage",
+        "Python"
     ],
-    "rulers":
-    [
-        100
-    ],
+    "rulers": [80],
     "tab_size": 4,
     "theme": "Cobalt2.sublime-theme",
     "translate_tabs_to_spaces": true,

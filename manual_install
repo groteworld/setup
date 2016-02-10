@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+echo "Manual Installs"
+
+while true; do
+    echo ""
+    echo "1. XCode"
+    echo "2. Unity3D"
+    echo "3. Textual 5"
+    echo "4. iMovie"
+    echo "5. GarageBand"
+    echo "5. Tweetdeck"
+    echo "q. exit"
+    read -p "Input the number you want to open to install? " num
+    case $num in
+        [1] ) open macappstore://itunes.apple.com/app/id497799835?mt=12; break;;
+        [2] ) open http://netstorage.unity3d.com/unity/cc9cbbcc37b4/UnityDownloadAssistant-5.3.1f1.dmg; break;;
+        [3] ) open macappstore://itunes.apple.com/app/id896450579?mt=12; break;;
+        [4] ) open macappstore://itunes.apple.com/app/id408981434?mt=12; break;;
+        [5] ) open macappstore://itunes.apple.com/app/id682658836?mt=12; break;;
+        [6] ) open macappstore://itunes.apple.com/app/id485812721?mt=12; break;;
+        ['qQ'] ) exit;;
+        * ) echo "Please enter an appropriate number or Q";;
+    esac
+done

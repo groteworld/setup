@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+pip install --upgrade pip
+pip install --upgrade setuptools
+pip install flake8
+pip install pep257
+pip install pep8-naming
+pip install virtualenv
+pip install awscli

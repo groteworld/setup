@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+dname="Blake Grotewold"
+demail="blake.grotewold@gmail.com"
+
+read -p "Git Name ($dname): " name
+read -p "Git Email ($demail): " email
+
+git config --global user.name = ${name-$dname}
+git config --global user.email = ${email-$demail}
+
+ssh-keygen -t rsa -b 4096 -C ${email-$demail}
+eval "$(ssh-agent -s)"
+ssh-add $HOME/.ssh/id_rsa
+pbcopy < $HOME/.ssh/id_rsa.pub
+echo "SSH key copied."
+
+# copy services to ~/Library/Services
+sudo cp -fR $HOME/.services/StartScreenSaver.workflow/ $HOME/Library/Services/StartScreenSaver.workflow/
+
+# copy shortcuts to ~/Library/Preferences
+sudo cp -f $HOME/.plists/pbs.plist $HOME/Library/Preferences/pbs.plist
+
+# copy SublimeText settings
+sudo cp -fR $HOME/.sublime/ "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
+
+sh $HOME/.osx

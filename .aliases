@@ -1,41 +1,43 @@
-# -*- sh -*-
-# with help from from https://github.com/losingkeys/dotfiles
+#!/usr/env/bin sh
+# with help from https://github.com/losingkeys/dotfiles
 
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
-alias show.='defaults write com.apple.finder AppleShowAllFiles YES;
-            killall Finder /System/Library/CoreServices/Finder.app'
-alias hide.='defaults write com.apple.finder AppleShowAllFiles NO;
-            killall Finder /System/Library/CoreServices/Finder.app'
+alias show.="defaults write com.apple.finder AppleShowAllFiles YES;
+            killall Finder /System/Library/CoreServices/Finder.app"
+alias hide.="defaults write com.apple.finder AppleShowAllFiles NO;
+            killall Finder /System/Library/CoreServices/Finder.app"
 
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias afk="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 # finds largest directories in cwd
-alias ducks='du -cks * | sort -rn | head'
+alias ducks="du -cks * | sort -rn | head"
 
-# make directory or file and open it
-mkcd() { mkdir $1 && cd $1 }
-tim() { touch $1 && vim $1 }
+# make directory or file and open it.
+# if no paramater given, make them an untitled dir or text file.
+mkcd() { dir=${1-"untitled"}; mkdir $dir && cd $dir; }
+tim() { file=${1-"untitled.txt"}; touch $file && vim $file; }
 
-alias git=hub
-alias g=git
-alias gs='git status'
+projects="$HOME/projects"
+if [ -d "$projects" ]; then
+  # change to a project directory with `p project-name`
+  p() { cd "$projects/$*"; }
+  compdef "_directories -W $projects" p; zstyle ':completion:*:p::' ignored-patterns '*~' '\\\#*\\\#'
+fi
 
-alias ls='ls -a'
+alias git="hub"
+alias g="git"
+alias gs="git status"
 
-alias vimrc='vim "$HOME/.vimrc"'
-alias zshrc='vim "$HOME/.zshrc"'
+alias ls="ls -a"
 
-alias '?'='which'
+alias vimrc="vim "$HOME/.vimrc""
+alias zshrc="vim "$HOME/.zshrc""
 
-alias venv='source .venv/bin/activate'
+alias "?"="which"
 
-alias dockup='eval "$(docker-machine env default)" && echo "(default) env attached."'
+venv() { dir = ${1-".venv"}; source "$dir/bin/activate"; }
 
-alias rustup='curl -s https://static.rust-lang.org/rustup.sh | sudo sh'
-
-alias u='sudo softwareupdate --download --install --all &&
-         brew update && brew upgrade && brew cask && rustup'
-alias clean='sudo brew cleanup && brew cask cleanup && rm -rf ~/.Trash/*'
+dock() { dockenv = ${1-"default"}; eval "$(docker-machine env $dockenv)" && echo "($dockenv) env attached."; }

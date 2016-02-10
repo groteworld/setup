@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+sudo gem install jekyll
+sudo gem install rubocop
+sudo gem install reek
+sudo gem install haml
+sudo gem install bundle

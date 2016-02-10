@@ -1,0 +1,60 @@
+#!/usr/bin/env sh
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+brew cask install amethyst
+brew cask install android-studio
+brew cask install atom
+brew cask install audacity
+brew cask install battle-net
+brew cask install blender
+brew cask install caffeine
+brew cask install dbvisualizer
+brew cask install dropbox
+brew cask install dockertoolbox
+brew cask install eclipse-java
+brew cask install evernote
+brew cask install filezilla
+brew cask install firefox
+brew cask install firefox-nightly
+brew cask install flash
+brew cask install flux
+brew cask install gimp
+brew cask install github-desktop
+brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install google-drive
+brew cask install google-hangouts
+brew cask install gpgtools
+brew cask install hipchat
+brew cask install imageoptim
+brew cask install intellij-idea
+brew cask install iterm2
+brew cask install java7
+brew cask install java
+brew cask install joinme
+brew cask install kindle
+brew cask install nylas-n1
+brew cask install opera
+brew cask install opera-developer
+brew cask install poedit
+brew cask install postgres
+brew cask install skitch
+brew cask install skype
+brew cask install slack
+brew cask install spectacle
+brew cask install spotify
+brew cask install steam
+brew cask install sublime-text-dev
+brew cask install sublime-text3
+brew cask install unity-web-player
+brew cask install utorrent
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install virtualbox
+brew cask install visual-studio-code
+brew cask install vlc
+brew cask install xquartz
