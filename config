@@ -6,8 +6,8 @@ demail="blake.grotewold@gmail.com"
 read -p "Git Name ($dname): " name
 read -p "Git Email ($demail): " email
 
-git config --global user.name=${name-$dname}
-git config --global user.email=${email-$demail}
+git config --global user.name ${name-$dname}
+git config --global user.email ${email-$demail}
 
 ssh-keygen -t rsa -b 4096 -C ${email-$demail}
 eval "$(ssh-agent -s)"
