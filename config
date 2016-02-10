@@ -15,6 +15,10 @@ ssh-add $HOME/.ssh/id_rsa
 pbcopy < $HOME/.ssh/id_rsa.pub
 echo "SSH key copied."
 
+# move .zshrc file back
+rm -f $HOME/.zshrc
+mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc
+
 # copy services to ~/Library/Services
 sudo cp -fR $HOME/.services/StartScreenSaver.workflow/ $HOME/Library/Services/StartScreenSaver.workflow/
 
