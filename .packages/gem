@@ -5,3 +5,4 @@ sudo gem install rubocop
 sudo gem install reek
 sudo gem install haml
 sudo gem install bundle
+sudo gem install cocoapods
