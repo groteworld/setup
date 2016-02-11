@@ -1,5 +1,5 @@
 export ZSH=$HOME//.oh-my-zsh
-export PATH="$(/usr/local/bin/brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$(/usr/local/bin/brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GEM_HOME=$HOME//.gem
 export GEM_PATH=GEM_HOME
