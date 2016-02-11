@@ -41,6 +41,7 @@ brew cask install nylas-n1
 brew cask install opera
 brew cask install opera-developer
 brew cask install poedit
+brew cask install pomotodo
 brew cask install postgres
 brew cask install skitch
 brew cask install skype
