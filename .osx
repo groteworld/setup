@@ -18,6 +18,9 @@ sudo pmset -a standbydelay 86400
 # Change highlight color to light royal purple
 defaults write NSGlobalDomain AppleHighlightColor -string "0.69 0.58 0.80"
 
+# Turn on Dark mode
+defaults write NSGlobalDomain AppleInterfaceStyle Dark;
+
 # Menu bar: hide the Time Machine, and User icons
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
 	defaults write "${domain}" dontAutoLoad -array \
