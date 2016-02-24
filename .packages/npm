@@ -11,3 +11,4 @@ npm install -g jsonlint
 npm install -g yo
 npm install -g ttystudio
 npm install -g keybase
+npm install -g how2
