@@ -27,6 +27,13 @@ if [ -d "$projects" ]; then
   compdef "_directories -W $projects" p; zstyle ':completion:*:p::' ignored-patterns '*~' '\\\#*\\\#'
 fi
 
+foxio="$HOME/foxio"
+if [ -d "$foxio" ]; then
+  # change to a project directory with `f project-name`
+  f() { cd "$foxio/$*"; }
+  compdef "_directories -W $foxio" f; zstyle ':completion:*:f::' ignored-patterns '*~' '\\\#*\\\#'
+fi
+
 alias git="hub"
 alias g="git"
 alias gs="git status"
@@ -38,6 +45,6 @@ alias zshrc="vim "$HOME/.zshrc""
 
 alias "?"="which"
 
-venv() { dir = ${1-".venv"}; source "$dir/bin/activate"; }
+venv() { dir=${1-".venv"}; source "$dir/bin/activate"; }
 
-dock() { dockenv = ${1-"default"}; eval "$(docker-machine env $dockenv)" && echo "($dockenv) env attached."; }
+dock() { dockenv=${1-"default"}; eval "$(docker-machine env $dockenv)" && echo "($dockenv) env attached."; }
