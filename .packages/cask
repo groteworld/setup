@@ -12,9 +12,10 @@ brew cask install audacity
 brew cask install battle-net
 brew cask install blender
 brew cask install caffeine
+brew cask install apache-couchdb
 brew cask install dbvisualizer
 brew cask install dropbox
-brew cask install dockertoolbox
+brew cask install docker
 brew cask install eclipse-java
 brew cask install evernote
 brew cask install filezilla
@@ -22,6 +23,7 @@ brew cask install firefox
 brew cask install firefox-nightly
 brew cask install flash
 brew cask install flux
+brew cask install franz
 brew cask install gimp
 brew cask install github-desktop
 brew cask install google-chrome
@@ -29,6 +31,7 @@ brew cask install google-chrome-canary
 brew cask install google-drive
 brew cask install google-hangouts
 brew cask install gpgtools
+brew cask install harvest
 brew cask install hipchat
 brew cask install imageoptim
 brew cask install intellij-idea
@@ -43,7 +46,10 @@ brew cask install opera-developer
 brew cask install poedit
 brew cask install pomotodo
 brew cask install postgres
+brew cask install psequel
 brew cask install remote-desktop-manager
+brew cask install runescape
+brew cask install sketch
 brew cask install skitch
 brew cask install skype
 brew cask install slack
