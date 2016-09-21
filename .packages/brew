@@ -44,7 +44,6 @@ brew install postgresql
 brew install python
 brew install python3
 brew install ruby
-brew install rust
 brew install sassc
 brew install tomcat
 brew install tree
