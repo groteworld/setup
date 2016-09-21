@@ -41,7 +41,6 @@ brew install libtiff
 brew install maven
 brew install node
 brew install postgresql
-brew install pypy
 brew install python
 brew install python3
 brew install ruby
