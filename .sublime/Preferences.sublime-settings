@@ -8,7 +8,7 @@
         "Vintage",
         "Python"
     ],
-    "rulers": [80],
+    "rulers": [100],
     "tab_size": 4,
     "theme": "Cobalt2.sublime-theme",
     "translate_tabs_to_spaces": true,

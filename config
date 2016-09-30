@@ -19,13 +19,7 @@ echo "SSH key copied."
 rm -f $HOME/.zshrc
 mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc
 
-# copy services to ~/Library/Services
-sudo cp -fR $HOME/.services/StartScreenSaver.workflow/ $HOME/Library/Services/StartScreenSaver.workflow/
-
-# copy shortcuts to ~/Library/Preferences
-sudo cp -f $HOME/.plists/pbs.plist $HOME/Library/Preferences/pbs.plist
-
 # copy SublimeText settings
-sudo cp -fR $HOME/.sublime/ "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
+sudo -u groteworld cp -fR $HOME/.sublime/ "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
 
-sh $HOME/.osx
+sh $HOME/.macos

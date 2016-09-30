@@ -16,12 +16,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 xcode-select --install
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 1>$HOME/.install_logs/bootstrap.log 2>&1
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 sh $HOME/install
 sh $HOME/manual_install
 
-sh $HOME/config 1>$HOME/.install_logs/config.log 2>&1 # Config System
+sh $HOME/config # Config System
 
 cat $HOME/.todo
 

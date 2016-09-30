@@ -2,9 +2,10 @@
 
 # Prepare SublimeText directories
 sublime_dir="$HOME/Library/Application Support/Sublime Text 3"
-sudo mkdir "$sublime_dir"
-sudo mkdir "$sublime_dir/Installed Packages"
-sudo mkdir "$sublime_dir/User"
+sudo -u groteworld mkdir "$sublime_dir"
+sudo -u groteworld mkdir "$sublime_dir/Installed Packages"
+sudo -u groteworld mkdir "$sublime_dir/Packages"
+sudo -u groteworld mkdir "$sublime_dir/User"
 
 # Install Package Control
-sudo curl https://sublime.wbond.net/Package%20Control.sublime-package -o "$sublime_dir/Installed Packages/Package Control.sublime-package"
+sudo -u groteworld curl https://sublime.wbond.net/Package%20Control.sublime-package -o "$sublime_dir/Installed Packages/Package Control.sublime-package"

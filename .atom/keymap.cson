@@ -1,3 +1,0 @@
-# unset this key binding for StartScreenSaver service
-'atom-workspace atom-text-editor:not([mini])':
-  'shift-cmd-L': 'unset!'

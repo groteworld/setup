@@ -1,13 +1,10 @@
 #!/usr/bin/env sh
 
-sh $HOME/.packages/brew 1>$HOME/.install_logs/brew.log 2>&1 # Install Homebrew packages
-sh $HOME/.packages/cask 1>$HOME/.install_logs/cask.log 2>&1 # Install Brewcask packages
-sh $HOME/.packages/pip 1>$HOME/.install_logs/pip.log 2>&1 # Install PyPI packages
-sh $HOME/.packages/npm 1>$HOME/.install_logs/npm.log 2>&1 # Install NPM packages
-sh $HOME/.packages/gem 1>$HOME/.install_logs/gem.log 2>&1 # Install Gem packages
-sh $HOME/.packages/pod 1>$HOME/.install_logs/pod.log 2>&1 # Install Cocoapods packages
-sh $HOME/.packages/apm 1>$HOME/.install_logs/apm.log 2>&1 # Install APM packages
-sh $HOME/.packages/sublime 1>$HOME/.install_logs/sublime.log 2>&1 # Install SublimeText packages
-sh $HOME/.packages/n1 1>$HOME/.install_logs/n1.log 2>&1 # Install Nylas N1 packages
+sh $HOME/.packages/brew # Install Homebrew packages
+sh $HOME/.packages/cask # Install Brewcask packages
+sh $HOME/.packages/pip # Install PyPI packages
+sh $HOME/.packages/npm # Install NPM packages
+sh $HOME/.packages/gem # Install Gem packages
+sh $HOME/.packages/sublime # Install SublimeText packages
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh

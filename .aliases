@@ -47,6 +47,4 @@ alias "?"="which"
 
 venv() { dir=${1-".venv"}; source "$dir/bin/activate"; }
 
-dock() { dockenv=${1-"default"}; eval "$(docker-machine env $dockenv)" && echo "($dockenv) env attached."; }
-
 alias vho="sudo vim /etc/hosts"

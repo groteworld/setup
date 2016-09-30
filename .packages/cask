@@ -9,6 +9,7 @@ brew cask install amethyst
 brew cask install android-studio
 brew cask install atom
 brew cask install audacity
+brew cask install bartender
 brew cask install battle-net
 brew cask install blender
 brew cask install caffeine
@@ -20,7 +21,7 @@ brew cask install eclipse-java
 brew cask install evernote
 brew cask install filezilla
 brew cask install firefox
-brew cask install firefox-nightly
+brew cask install firefoxnightly
 brew cask install flash
 brew cask install flux
 brew cask install franz
@@ -34,11 +35,11 @@ brew cask install gpgtools
 brew cask install harvest
 brew cask install hipchat
 brew cask install imageoptim
+brew cask install insomnia
 brew cask install intellij-idea
 brew cask install iterm2
 brew cask install java7
 brew cask install java
-brew cask install joinme
 brew cask install kindle
 brew cask install nylas-n1
 brew cask install opera
@@ -57,9 +58,9 @@ brew cask install spectacle
 brew cask install spotify
 brew cask install steam
 brew cask install sublime-text-dev
-brew cask install sublime-text3
+brew cask install sublime-text
+brew cask install transmission
 brew cask install unity-web-player
-brew cask install utorrent
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install virtualbox
