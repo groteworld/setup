@@ -19,7 +19,7 @@ Once the above command is run, you can safely delete `bootstrap`, `config`, `ins
 rm -f $HOME/bootstrap $HOME/config $HOME/install $HOME/manual_install
 ```
 
-`.osx`, `.todo`, `.services`, `.plists`, `.packages`, and `.sublime` *could* be uninstalled, but will hide nicely as dotfiles.
+`.macos`, `.todo`, `.services`, `.plists`, `.packages`, and `.sublime` *could* be uninstalled, but will hide nicely as dotfiles.
 
 ## Notes
 
