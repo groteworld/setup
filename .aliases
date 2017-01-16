@@ -38,7 +38,7 @@ alias git="hub"
 alias g="git"
 alias gs="git status"
 
-alias ls="ls --color=always -A"
+alias ls="ls -GA"
 
 alias vimrc="vim "$HOME/.vimrc""
 alias zshrc="vim "$HOME/.zshrc""
