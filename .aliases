@@ -9,11 +9,15 @@ alias show.="defaults write com.apple.finder AppleShowAllFiles YES;
             killall Finder /System/Library/CoreServices/Finder.app"
 alias hide.="defaults write com.apple.finder AppleShowAllFiles NO;
             killall Finder /System/Library/CoreServices/Finder.app"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 alias afk="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 # finds largest directories in cwd
 alias ducks="du -cks * | sort -rn | head"
+
+alias ip="ipconfig getifaddr en0"
 
 # make directory or file and open it.
 # if no paramater given, make them an untitled dir or text file.

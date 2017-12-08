@@ -2,7 +2,7 @@
 
 brew tap homebrew/versions
 
-# Commented parts here are with help from https://github.com/mathiasbynens/dotfiles
+# Commented parts here are with help from https:m//github.com/mathiasbynens/dotfiles
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -28,27 +28,18 @@ brew install ack
 brew install bash
 brew install bash-completion2
 brew install cmake
+brew install dcfldd
 brew install git
 brew install git-flow
 brew install git-lfs
-brew install gpg
-brew install gradle
 brew install heroku-toolbelt
 brew install hub
-brew install leiningen
 brew install libffi
 brew install libtiff
-brew install maven
+brew install mas
 brew install node
-brew install postgresql
-brew install python
+brew install nmap
 brew install python3
-brew install ruby
-brew install rust
-brew install sassc
-brew install screen
-brew install tomcat
 brew install tree
-brew install webkit2png
 brew install zsh
 brew install zsh-completions

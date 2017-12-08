@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+# from `code --list-extensions`
+modules="
+PeterJausovec.vscode-docker
+Unity.unity-debug
+Zignd.html-css-class-completion
+adamvoss.yaml
+akfish.vscode-devdocs
+arcticicestudio.nord-visual-studio-code
+cometeer.spacemacs
+dbaeumer.vscode-eslint
+dracula-theme.theme-dracula
+eamodio.gitlens
+groksrc.haml
+hariscodes.vscode
+idleberg.hopscotch
+lukehoban.Go
+mjmcloug.vscode-elixir
+ms-python.python
+ms-vscode.cpptools
+ms-vscode.csharp
+msjsdiag.debugger-for-chrome
+octref.vetur
+robertohuertasm.vscode-icons
+robinbentley.sass-indented
+rust-lang.rust
+wesbos.theme-cobalt2
+zhuangtongfa.Material-theme
+"
+for module in $modules; do
+    code --install-extension "$module" || true
+done

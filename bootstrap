@@ -7,6 +7,11 @@ mkdir $HOME/.vim/swaps
 mkdir $HOME/.vim/backups
 mkdir $HOME/.vim/undo
 mkdir $HOME/projects
+mkdir $HOME/foxio
+mkdir $HOME/games
+mkdir $HOME/games/snes
+mkdir $HOME/games/n64
+mkdir $HOME/games/gcn
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -22,8 +27,6 @@ sh $HOME/install
 sh $HOME/manual_install
 
 sh $HOME/config # Config System
-
-cat $HOME/.todo
 
 should_restart=false
 should_cleanup=false
@@ -48,7 +51,7 @@ done
 
 if [ $should_cleanup ]
 then
-sudo rm -rf $HOME/config $HOME/install $HOME/manual_install
+sudo rm -rf $HOME/config $HOME/install $HOME/manual_install $HOME/vscode $HOME/.macos $HOME/.packages
 sudo rm -- $0
 fi
 

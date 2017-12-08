@@ -19,7 +19,8 @@ echo "SSH key copied."
 rm -f $HOME/.zshrc
 mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc
 
-# copy SublimeText settings
-sudo -u groteworld cp -fR $HOME/.sublime/ "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
+# copy vs-code settings
+sudo -u groteworld mkdir -p "$HOME/Library/Application Support/Code/User"
+sudo -u groteworld cp "$HOME/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
 sh $HOME/.macos

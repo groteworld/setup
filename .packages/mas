@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+mas signin blake.grotewold@gmail.com
+
+mas install 896450579 # Textual
+mas install 408981434 # iMovie
+mas install 497799835 # Xcode
+mas install 682658836 # GarageBand
+mas install 409183694 # Keynote
+mas install 409201541 # Pages
+mas install 410628904 # Wunderlist
+mas install 409203825 # Numbers

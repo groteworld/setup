@@ -22,10 +22,10 @@ defaults write NSGlobalDomain AppleHighlightColor -string "0.69 0.58 0.80"
 defaults write NSGlobalDomain AppleInterfaceStyle Dark;
 
 # Menu bar: hide the Time Machine, and User icons
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
++defaults -currentHost write dontAutoLoad -array \
+ +	"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+ +	"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+ +	"/System/Library/CoreServices/Menu Extras/User.menu"
 defaults write com.apple.systemuiserver menuExtras -array \
 	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
 	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
@@ -130,9 +130,6 @@ sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
 sudo chflags uchg /private/var/vm/sleepimage
 
-# Disable the sudden motion sensor as it’s not useful for SSDs
-sudo pmset -a sms 0
-
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -160,11 +157,11 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
-# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+iiiiiiiiiiiiiiii
 # Set a blazingly fast keyboard repeat rate
-# defaults write NSGlobalDomain KeyRepeat -int 1
-# defaults write NSGlobalDomain InitialKeyRepeat -int 10
++defaults write NSGlobalDomain KeyRepeat -int 1
+ +defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 ###############################################################################
 # Screen                                                                      #
@@ -181,7 +178,7 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
@@ -219,6 +216,9 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
@@ -231,8 +231,9 @@ defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 # Remove the spring loading delay for directories
 defaults write NSGlobalDomain com.apple.springing.delay -float 0
 
-# Avoid creating .DS_Store files on network volumes
+# Avoid creating .DS_Store files on network or usb volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Disable disk image verification
 defaults write com.apple.frameworks.diskimages skip-verify -bool true
@@ -492,10 +493,6 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 ###############################################################################
 # Google Chrome & Google Chrome Canary                                        #
 ###############################################################################
-
-# Allow installing user scripts via GitHub Gist or Userscripts.org
-defaults write com.google.Chrome ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
-defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
 
 # Disable the all too sensitive backswipe on trackpads
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false

@@ -1,0 +1,55 @@
+{
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "editor.fontSize": 14,
+    "editor.rulers": [
+        100
+    ],
+    "files.trimTrailingWhitespace": true,
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[haml]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[python]": {
+        "editor.rulers": [
+        80, 100
+        ]
+    },
+    "[rust]": {
+        "editor.rulers": [
+        80
+        ]
+    },
+    "editor.minimap.enabled": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.minimap.renderCharacters": false,
+    "workbench.sideBar.location": "left",
+    "workbench.iconTheme": "vscode-icons",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true
+    },
+    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
+    }
+}

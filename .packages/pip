@@ -1,15 +1,5 @@
 #!/usr/bin/env sh
 
-pip install --upgrade pip
-pip install --upgrade setuptools
-pip install flake8
-pip install pydocstyle
-pip install pep8-naming
-pip install virtualenv
-pip install awscli
-
 pip3 install --upgrade pip
 pip3 install --upgrade setuptools
-pip3 install flake8
-pip3 install pydocstyle
-pip3 install pep8-naming
+pip3 install awscli
