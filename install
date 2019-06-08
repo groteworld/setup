@@ -2,10 +2,8 @@
 
 sh $HOME/.packages/brew # Install Homebrew packages
 sh $HOME/.packages/cask # Install Brewcask packages
-sh $HOME/.packages/mas # install Mac App Store packagess
-sh $HOME/.packages/pip # Install PyPI packages
-sh $HOME/.packages/npm # Install NPM packages
+sh $HOME/.packages/mas # install Mac App Store packages
 sh $HOME/.packages/gem # Install Gem packages
-sh $HOME/.packages/sublime # Install SublimeText packages
+sh $HOME/.packages/vscode # Install vs-code packages
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh

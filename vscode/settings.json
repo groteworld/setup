@@ -1,5 +1,6 @@
 {
-    "workbench.colorTheme": "One Dark Pro Vivid",
+    "workbench.colorTheme": "Shades of Purple",
+    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.rulers": [
         100
@@ -38,7 +39,6 @@
         "**/*.pyc": true,
         "**/__pycache__": true
     },
-    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "workbench.startupEditor": "newUntitledFile",
     "explorer.confirmDragAndDrop": false,

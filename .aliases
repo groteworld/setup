@@ -42,6 +42,9 @@ alias git="hub"
 alias g="git"
 alias gs="git status"
 
+alias dc="docker-compose"
+alias dcup="docker-compose up -d"
+
 alias ls="ls -GA"
 
 alias vimrc="vim "$HOME/.vimrc""

@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-
-npm install -g yo
-npm install -g ttystudio

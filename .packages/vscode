@@ -2,31 +2,22 @@
 
 # from `code --list-extensions`
 modules="
-PeterJausovec.vscode-docker
-Unity.unity-debug
-Zignd.html-css-class-completion
+peterjausovec.vscode-docker
+unity.unity-debug
 adamvoss.yaml
-akfish.vscode-devdocs
-arcticicestudio.nord-visual-studio-code
-cometeer.spacemacs
+bungcip.better-toml
 dbaeumer.vscode-eslint
-dracula-theme.theme-dracula
 eamodio.gitlens
 groksrc.haml
-hariscodes.vscode
-idleberg.hopscotch
-lukehoban.Go
-mjmcloug.vscode-elixir
+tobiah.unity-tools
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.csharp
-msjsdiag.debugger-for-chrome
-octref.vetur
-robertohuertasm.vscode-icons
-robinbentley.sass-indented
+ms-vscode.go
+vscode-icons-team.vscode-icons
 rust-lang.rust
-wesbos.theme-cobalt2
-zhuangtongfa.Material-theme
+ahmadawais.shades-of-purple
+mechatroner.rainbow-csv
 "
 for module in $modules; do
     code --install-extension "$module" || true
