@@ -2,8 +2,9 @@
 
 sh $HOME/.packages/brew # Install Homebrew packages
 sh $HOME/.packages/cask # Install Brewcask packages
-sh $HOME/.packages/mas # install Mac App Store packages
+sh $HOME/.packages/mas # Install Mac App Store packages
 sh $HOME/.packages/gem # Install Gem packages
+sh $HOME/.packages/npm # Install NodeJS packages
 sh $HOME/.packages/vscode # Install vs-code packages
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
