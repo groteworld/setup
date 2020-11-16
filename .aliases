@@ -38,7 +38,6 @@ if [ -d "$foxio" ]; then
   compdef "_directories -W $foxio" f; zstyle ':completion:*:f::' ignored-patterns '*~' '\\\#*\\\#'
 fi
 
-alias git="hub"
 alias g="git"
 alias gs="git status"
 
