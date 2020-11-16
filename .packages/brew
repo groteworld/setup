@@ -25,4 +25,5 @@ brew install nvm
 brew install nmap
 brew install pipenv
 brew install tree
+brew install wget
 brew install yarn
