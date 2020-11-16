@@ -2,31 +2,22 @@
 
 brew tap homebrew/cask-fonts
 
+brew cask install alfred
 brew cask install amethyst
 brew cask install android-platform-tools
 brew cask install android-studio
 brew cask install arduino
 brew cask install battle-net
-brew cask install blender
 brew cask install cyberduck
 brew cask install discord
 brew cask install docker
-brew cask install dolphin
-brew cask install dotnet-sdk
 brew cask install dropbox
-brew cask install belenaetcher
 brew cask install firefox
 brew cask install font-fira-code
-brew cask install gimp
 brew cask install github
 brew cask install google-chrome
 brew cask install harvest
 brew cask install insomnia
-brew cask install install-disk-creator
-brew cask install iterm2
-brew cask install java
-brew cask install kitematic
-brew cask install krita
 brew cask install minecraft
 brew cask install mysqlworkbench
 brew cask install ngrok
@@ -39,11 +30,6 @@ brew cask install slack
 brew cask install spectacle
 brew cask install spotify
 brew cask install steam
-brew cask install teensy
-brew cask install the-unarchiver
-brew cask install transmission
 brew cask install unity-download-assistant
 brew cask install virtualbox
 brew cask install visual-studio-code
-brew cask install vlc
-brew cask install xquartz
