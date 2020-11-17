@@ -20,6 +20,7 @@ brew cask install github
 brew cask install google-chrome
 brew cask install harvest
 brew cask install insomnia
+brew cask install local
 brew cask install minecraft
 brew cask install mysqlworkbench
 brew cask install ngrok
