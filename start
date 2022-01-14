@@ -16,12 +16,12 @@ xcode-select --install
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-sh $HOME/setup/packages/brew.sh
-sh $HOME/setup/packages/cask.sh
-sh $HOME/setup/packages/gems.sh
-sh $HOME/setup/packages/node.sh
-sh $HOME/setup/packages/vscode.sh
-sh $HOME/setup/packages/mas.sh
+sh $HOME/setup/packages/brew
+sh $HOME/setup/packages/cask
+sh $HOME/setup/packages/gems
+sh $HOME/setup/packages/node
+sh $HOME/setup/packages/vscode
+sh $HOME/setup/packages/mas
 
 curl https://sh.rustup.rs -sSf | sh
 
