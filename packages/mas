@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mas signin blake.grotewold@gmail.com
+
+mas install 896450579 # Textual
+mas install 408981434 # iMovie
+mas install 497799835 # Xcode
+mas install 682658836 # GarageBand

@@ -1,0 +1,58 @@
+#!/bin/bash
+# with help from https://github.com/losingkeys/dotfiles
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias show.="defaults write com.apple.finder AppleShowAllFiles YES;
+            killall Finder /System/Library/CoreServices/Finder.app"
+alias hide.="defaults write com.apple.finder AppleShowAllFiles NO;
+            killall Finder /System/Library/CoreServices/Finder.app"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+alias afk="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+
+# finds largest directories in cwd
+alias ducks="du -cks * | sort -rn | head"
+
+alias ip="ipconfig getifaddr en0"
+
+# make directory or file and open it.
+# if no paramater given, make them an untitled dir or text file.
+mkcd() { dir=${1-"untitled"}; mkdir $dir && cd $dir; }
+tim() { file=${1-"untitled.txt"}; touch $file && vim $file; }
+
+projects="$HOME/projects"
+if [ -d "$projects" ]; then
+  # change to a project directory with `p project-name`
+  p() { cd "$projects/$*"; }
+  compdef "_directories -W $projects" p; zstyle ':completion:*:p::' ignored-patterns '*~' '\\\#*\\\#'
+fi
+
+foxio="$HOME/foxio"
+if [ -d "$foxio" ]; then
+  # change to a project directory with `f project-name`
+  f() { cd "$foxio/$*"; }
+  compdef "_directories -W $foxio" f; zstyle ':completion:*:f::' ignored-patterns '*~' '\\\#*\\\#'
+fi
+
+alias g="git"
+alias gs="git status"
+
+alias dc="docker-compose"
+alias dcup="docker-compose up -d"
+
+alias ls="ls -GA"
+
+alias vimrc="vim "$HOME/.vimrc""
+alias zshrc="vim "$HOME/.zshrc""
+
+alias "?"="which"
+
+venv() { dir=${1-".venv"}; source "$dir/bin/activate"; }
+
+alias vho="sudo vim /etc/hosts"
+
+alias http="python3 -m http.server"

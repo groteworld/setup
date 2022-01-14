@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Create some directories
+mkdir $HOME/projects
+mkdir $HOME/foxio
+
+# Ask for the administrator password upfront.
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until the script has finished.
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+# Do installs
+xcode-select --install
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+sh $HOME/setup/packages/brew.sh
+sh $HOME/setup/packages/cask.sh
+sh $HOME/setup/packages/gems.sh
+sh $HOME/setup/packages/node.sh
+sh $HOME/setup/packages/vscode.sh
+sh $HOME/setup/packages/mas.sh
+
+curl https://sh.rustup.rs -sSf | sh
+
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+
+# Do configs
+
+rm -f $HOME/.zshrc
+mv $HOME/.zshrc.pre-oh-my-zsh $HOME/.zshrc
+
+mv $HOME/setup/dotfiles/.zshrc $HOME/.zshrc
+mv $HOME/setup/dotfiles/groteworld.zsh-theme $HOME/.oh-my-zsh/custom/themes/groteworld.zsh-theme
+
+sudo -u groteworld mkdir -p "$HOME/Library/Application Support/Code/User"
+sudo -u groteworld cp "$HOME/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+
+sh $HOME/setup/configs/mac
