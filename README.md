@@ -1,4 +1,4 @@
-# dotfiles
+# macos setup
 
 > "I LOVE THIS STUFF, PEOPLES!"  
 >           *-- myself (age 5)*
@@ -8,7 +8,7 @@ PLEASE DON'T RUN THIS UNLESS YOU KNOW WHAT IT DOES
 
 ## Installation
 ```
-cd; mkdir setup; curl -#L http://dotfiles.grote.world | tar -xzv --strip-components 1; sh $HOME/setup/start
+cd; mkdir setup; cd setup; curl -#L http://dotfiles.grote.world | tar -xzv --strip-components 1; sh $HOME/setup/start
 ```
 
 ## Clean Up
