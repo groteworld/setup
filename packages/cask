@@ -32,7 +32,6 @@ brew install --cask runescape
 brew install --cask runelite
 brew install --cask rectangle
 brew install --cask slack
-brew install --cask spectacle
 brew install --cask spotify
 brew install --cask steam
 brew install --cask transmission
