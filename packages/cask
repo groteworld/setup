@@ -10,6 +10,7 @@ brew install --cask battle-net
 brew install --cask discord
 brew install --cask docker
 brew install --cask dolphin
+brew install --cask dotnet-sdk
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask font-fira-code
