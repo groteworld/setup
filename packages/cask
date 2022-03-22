@@ -1,17 +1,15 @@
 #!/bin/bash
 
 brew tap homebrew/cask-fonts
-brew tap adoptopenjdk/openjdk
 
 brew install --cask adobe-creative-cloud
-brew install --cask adoptopenjdk8
 brew install --cask alfred
 brew install --cask android-platform-tools
 brew install --cask android-studio
 brew install --cask battle-net
-brew install --cask cyberduck
 brew install --cask discord
 brew install --cask docker
+brew install --cask dolphin
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask font-fira-code
@@ -21,12 +19,13 @@ brew install --cask google-chrome
 brew install --cask harvest
 brew install --cask handbrake
 brew install --cask insomnia
+brew install --cask lastpass
 brew install --cask local
 brew install --cask minecraft
 brew install --cask mysqlworkbench
 brew install --cask ngrok
 brew install --cask openemu
-brew install --cask psequel
+brew install --cask postico
 brew install --cask private-internet-access
 brew install --cask robo-3t
 brew install --cask runescape
@@ -37,6 +36,6 @@ brew install --cask spectacle
 brew install --cask spotify
 brew install --cask steam
 brew install --cask transmission
-brew install --cask unity-download-assistant
+brew install --cask unity
 brew install --cask visual-studio-code
 brew install --cask zoom
