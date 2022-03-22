@@ -1,6 +1,7 @@
 #!/bin/bash
 
 modules="
+github.copilot
 unity.unity-debug
 bungcip.better-toml
 dbaeumer.vscode-eslint
