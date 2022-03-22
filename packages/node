@@ -1,4 +1,3 @@
 #!/bin/bash
 
-npm install --global git-open
 npm install --global serverless
